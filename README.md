@@ -5,12 +5,12 @@ test and source code for Network-Aware Locality Scheduling
 
 The TPC-H benchmark can be downloaded from http://www.tpc.org/tpch/. The following two commonads are used to generate the two used tables, each of which includes 600 data partitions.
 
-> ./dbgen -vf -s 600 -T c
-> ./dbgen -vf -s 600 -T o
+> ./dbgen -vf -s 600 -T c <br/>
+ ./dbgen -vf -s 600 -T o
 
 The `GenKey.java` is used to extracted the keys from the generated tables. The `VariousNode.java`, `VariousZipf.java` and `VariousSkew.java` ace used to generated the workloads used in the paper.  The `code.jar` is the extracted jar file to generate the used workloads. Some example commands are shown as below.
->java -cp code.jar VariousNode 200
-java -cp code.jar VariousSkew 40
+>java -cp code.jar VariousNode 200  <br/>
+java -cp code.jar VariousSkew 40  <br/>
 java -cp code.jar VariousZipf 1
 
 ## Simulations using Matlab 
@@ -36,10 +36,10 @@ There are three source code files in this emulation.
 - setup-mininet-eql.py
 - setup-dataprocess.py
 
->setup-mininet-opt.py is for emulating the networking based on coFlow algorithm. 
->setup-mininet-eql.py does not use coFlow algorithm, which is used as a benchmark networking. 
->setup-dataprocess.py is used for final data processing. 
->Plesae refer to our paper for more detail about the parameters of the experiment setup. 
+>`setup-mininet-opt.py` is for emulating the networking based on coFlow algorithm.   <br/>
+`setup-mininet-eql.py` does not use coFlow algorithm, which is used as a benchmark networking.   <br/>
+`setup-dataprocess.py` is used for final data processing.  <br/>
+Plesae refer to our paper for more detail about the parameters of the experiment setup. 
 
 Please follow the steps below for running the emulation code. 
 1. Change the file names of workload and bandwidth in setup-mininet-opt.py. For example, 
