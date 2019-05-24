@@ -1,5 +1,5 @@
 # NEAL
-test and source code for Network-Aware Locality Scheduling
+test and source code for NEtwork-Aware Locality scheduling
 
 ## Workload Generation
 
